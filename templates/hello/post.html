@@ -92,7 +92,7 @@
 		{% if request.user.is_authenticated %}
 		<form action="" method="POST">
 			{% csrf_token %}
-			<textarea required class="form-control" placeholder="Leave a comment..." name="comment"></textarea>
+			<textarea required class="form-control" placeholder="Comment not available at the moment..." name="comment"></textarea>
 			<br>
 			<input class="btn btn-info" type="submit" value="Submit">
 		</form>
