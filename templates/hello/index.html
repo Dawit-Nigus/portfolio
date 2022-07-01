@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'hello/default.css' %}">
+	  <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    
+   
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{% static 'hello/icons/apple-touch-icon.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{% static 'hello/icons/favicon-32x32.png' %}"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Dawit Nigus | Web Developer</title>
+    
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>Dawit Nigus</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        <!-- i use js for this button -->
+      </button>
+    </nav>
+   
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="{% static 'hello/images/Mediamodifier-Design2.svg' %}"
+        alt="Dawit"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          Hey there! I don’t think we’ve met before, I’m Dawit Nigus.
+          
+        </p>
+      </div>
+    </section>
+  </br>
+    <div >
+      <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+    </br>
+      <div id="theme-options-wrapper">
+        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+      </div>
+
+    </div>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        &#9734; I’m a computer science student at American College of Technology, and I love it here &#128525; 
+        I’m hoping to make some connections for future internships and jobs.
+        Believe it or not, I know a lot about computer science! I love to code, 
+        and I can help you with all your computer needs&#9786;.
+      </p>
+      <p>
+        &#9993; Email
+        <a href="mailto:dawitnigus18@gmail.com" target="_blank"
+          >DawitNigus18@gmail.com</a
+        >
+      </p>
+      <p>
+        &#9743;Call now  
+        <a href="tel:+251938297660" target="_blank"
+          >&#10009;251938297660</a
+          >
+      </p>
+
+      
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="{% static 'hello/icons/icons8-html-5.svg' %}"
+            alt="HTML"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'hello/icons/icons8-css3.svg' %}"
+            alt="CSS"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'hello/icons/icons8-javascript.svg' %}"
+            alt="JS"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="{% static 'hello/icons/icons8-bootstrap.svg' %}"
+            alt="Bootstrap"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'hello/icons/icons8-java.svg' %}"
+            alt="Java"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'hello/icons/icons8-c++.svg' %}"
+            alt="C++"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Past HTML Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="{% static 'hello/images/google-48.png' %}"
+            alt="google-Clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Google</h3>
+          <p class="project-details">
+            This is a clone of Google I design Using Html and CSS,
+            Click the link below 
+          </p>
+          <a href="https://www.google.com/" target="_blank" class="project-link">Check it Out</a>
+        </div>
+
+        <div class="project-container project-card">
+          <img
+            src="{% static 'hello/images/netflix.png' %}"
+            alt="netflix-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Netflix </h3>
+          <p class="project-details">
+            This is a clone of Netflix I design Using Html and CSS,
+            Click the link below 
+
+          </p>
+          <a href="{% static 'hello/netflix/index.html' %}" target="_blank" class="project-link">Check it Out</a>
+        </div>
+
+        <div class="project-container project-card">
+          <img
+            src="{% static 'hello/images/instagram.png' %}"
+            alt="Instagram-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Instagram</h3>
+          <p class="project-details">
+            This is a clone of Instagram login I design Using Html and CSS,
+            Click the link below 
+          </p>
+          <a href="{% static 'hello/Instagram/index.html' %}" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+     
+    </br>
+      
+      <section class="s1">
+        <div class="main-container">
+          <h1 style="text-align: center;">Some of my Recent projects</h1>
+        </br>
+          <div class="post-wrapper">
+    
+            <div>
+              <div class="post">
+                <img class="thumbnail" src="{% static 'hello/images/blog-1.jpg' %}">
+                <div class="post-preview">
+                  <h6 class="post-title">Restaurant Management System</h6>
+                  <p class="post-intro"> This is a restaurant Website ,
+                    Click the link below </p>
+                  <a href="{% url 'posts' %}">Read More</a>
+                </div>
+              </div>
+            </div>
+    
+            <div>
+              <div class="post">
+                <img class="thumbnail" src="{% static 'hello/images/ecom.jpg' %}">
+                <div class="post-preview">
+                  <h6 class="post-title">Online Store - CoursePost Title</h6>
+                  <p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
+                  <a href="{% url 'posts' %}">Read More</a>
+                </div>
+              </div>
+            </div>
+    
+            <div>
+              <div class="post">
+                <img class="thumbnail" src="{% static 'hello/images/ecommerce.jpg' %}">
+                <div class="post-preview">
+                  <h6 class="post-title">Membership Website</h6>
+                  <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                  <a href="{% url 'posts' %}">Read More</a>
+                </div>
+              </div>
+            </div>
+    
+          <!--
+            {% for post in posts %}
+            <div>
+              <div class="post">
+                <img class="thumbnail" src="{{post.thumbnail.url}}">
+                <div class="post-preview">
+                  <h6 class="post-title">{{post.headline}}</h6>
+                  <p class="post-intro">{{post.sub_headline}}</p>
+                  <a href="{%  url 'post' post.slug %}">Read More</a>
+                </div>
+              </div>
+            </div>
+          
+            {% endfor %}
+            -->
+          </div>
+          <p align="center">
+            <a href="{% url 'posts' %}">View More</a>
+          </p>
+          {% block content %}
+          <!-- Content goes here -->
+          {% endblock content %}
+        </div>
+      </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mbjwabew" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://twitter.com/davejr__" target="_blank"
+        ><img
+          src="{% static 'hello/icons/icons8-twitter-circled.gif' %}"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.instagram.com/dawit_nigus1/" target="_blank"
+        ><img
+          src="{% static 'hello/icons/icons8-instagram.gif' %}"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/dawit-nigus-899847206/" target="_blank"
+        ><img
+          src="{% static 'hello/icons/icons8-linkedin-circled.gif' %}"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/Dawit-Nigus" target="_blank"
+        ><img src="{% static 'hello/icons/icons8-github.gif' %}" alt="Github" class="socicon"
+      /></a>
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="{% static 'hello/icons/icons8-emoji-64.png' %}"
+        class="socicon up-arrow"
+        alt=""
+    /></i>
+
+    <!-- Footer section -->
+    <footer>
+      
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="https://twitter.com/davejr__" target="_blank"
+          >Dawit Nigus</a
+        >
+      </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14377.818124217236!2d38.76501471565492!3d9.033656427933533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85f0f9a06d85%3A0x4331551f2e0d81cb!2zQUNUIEFtZXJpY2FuIENvbGxlZ2Ugb2YgVGVjaG5vbG9neSB8IDQgS2lsbyB8IOGKoOGKreGJtSDhiqDhiJzhiKrhiqvhipUg4Ym04Yqt4YqW4YiO4YyCIOGKruGIjOGMhSB8IDQg4Yqq4YiO!5e0!3m2!1sen!2set!4v1649227507868!5m2!1sen!2set" 
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+   
+   
+    <!-- Ion icons scripts -->
+    <script type="text/javascript">
+      let static ="{% static 'hello' %}"
+    </script>
+
+    <script src="{% static 'hello/app.js' %}"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
