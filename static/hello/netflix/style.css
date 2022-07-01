@@ -1,0 +1,564 @@
+* {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #222222;
+}
+
+section {
+  position: relative;
+  margin-bottom: 8px;
+  background-color: #000;
+}
+
+.sec1 {
+  height: 742px;
+  background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, #000000ee),
+      color-stop(50%, #00000070),
+      to(#000000ee)
+    ),
+    url("images/Netflix-Background.jpg");
+  background: linear-gradient(
+      to top,
+      #000000ee 0,
+      #00000070 50%,
+      #000000ee 100%
+    ),
+    url("images/Netflix-Background.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sec1 nav {
+  height: 90px;
+  width: 100%;
+  padding: 0 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.sec1 nav .logo {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.sec1 nav .logo img {
+  margin-top: 10px;
+  height: 47px;
+  width: 168px;
+}
+
+.sec1 nav .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec1 nav .buttons button {
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+}
+
+.sec1 nav .buttons .btn1 {
+  font-size: 15px;
+  padding: 5px;
+  border: 1px solid #fff;
+  margin-right: 30px;
+  background-color: transparent;
+}
+
+.sec1 nav .buttons .btn2 {
+  background-color: #e50914;
+}
+
+.sec1 .content {
+  height: 535px;
+  width: 950px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto auto;
+  padding: 75px 0;
+}
+
+.sec1 .content * {
+  margin: 0 auto;
+}
+
+.sec1 .content h1 {
+  width: 33rem;
+  font-weight: 600;
+  font-size: 65px;
+}
+
+.sec1 .content h2 {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.sec1 .content p {
+  font-size: 19px;
+  margin-top: 30px;
+}
+
+.sec1 .content .input {
+  margin-top: 20px;
+  height: 70px;
+  width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec1 .content .input input {
+  border-radius: 3px;
+  color: #000;
+  outline: none;
+  height: 70px;
+  width: 500px;
+  border: none;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.sec1 .content .input button {
+  font-size: 30px;
+  padding-left: 10px;
+  width: 250px;
+  background-color: #e50914;
+  outline: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  place-items: center;
+}
+
+.sec1 .content .input button i {
+  margin: 0;
+  font-size: 40px;
+}
+
+.sec2 {
+  height: 473px;
+  padding: 70px 45px;
+}
+
+.sec2 .content {
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sec2 .content .text {
+  width: 600px;
+  padding-right: 50px;
+}
+
+.sec2 .content .text h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.sec2 .content .text h2 {
+  margin-top: 1em;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.sec2 .content .imge video {
+  height: 400px;
+  width: 530px;
+}
+
+.sec3 {
+  height: 470px;
+  padding: 70px 45px;
+}
+
+.sec3 .content {
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sec3 .content .imge {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 350px;
+  width: 500px;
+  background: url("images/iPhone.jpg");
+  background-size: 100%;
+  background-position: -75px -30px;
+  background-repeat: no-repeat;
+}
+
+.sec3 .content .imge .download {
+  height: 100px;
+  width: 320px;
+  padding: 10px 15px;
+  background-color: #000;
+  border: 2px solid #444444;
+  border-radius: 15px;
+  position: absolute;
+  top: 65%;
+  left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sec3 .content .imge .download img {
+  height: 100%;
+  width: auto;
+}
+
+.sec3 .content .imge .download .Dtext {
+  width: auto;
+  margin: 0 15px;
+}
+
+.sec3 .content .imge .download .Dtext #sp1 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.sec3 .content .imge .download .Dtext #sp2 {
+  font-size: 15px;
+  color: #0071eb;
+}
+
+.sec3 .content .imge .download .bx {
+  font-size: 35px;
+  margin-left: auto;
+}
+
+.sec3 .content .text {
+  width: 600px;
+  padding-left: 50px;
+}
+
+.sec3 .content .text h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.sec3 .content .text h2 {
+  margin-top: 1em;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.sec4 {
+  height: 543px;
+  padding: 70px 45px;
+}
+
+.sec4 .content {
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sec4 .content .text {
+  width: 590px;
+  padding-right: 50px;
+}
+
+.sec4 .content .text h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.sec4 .content .text h2 {
+  margin-top: 1em;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.sec5 {
+  height: 530px;
+  padding: 70px 45px;
+}
+
+.sec5 .content {
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sec5 .content img {
+  height: 380px;
+  width: 504px;
+}
+
+.sec5 .content .text {
+  width: 580px;
+  padding-left: 50px;
+}
+
+.sec5 .content .text h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.sec5 .content .text h2 {
+  margin-top: 1em;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.sec6 {
+  height: 928px;
+  padding: 70px 45px;
+}
+
+.sec6 .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sec6 .content p {
+  margin-top: 20px;
+}
+
+.sec6 .content h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.sec6 .content ul {
+  width: 815px;
+  list-style: none;
+  margin: 50px auto;
+}
+
+.sec6 .content ul li {
+  font-weight: 500;
+  background-color: #303030;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 26px;
+  height: 75px;
+  padding: 0 30px;
+}
+
+.sec6 .content ul li .bx {
+  font-size: 40px;
+}
+
+.sec6 .content ul li:last-child {
+  margin: 0;
+}
+
+.sec6 .content .input {
+  margin-top: 20px;
+  height: 70px;
+  width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec6 .content .input input {
+  border-radius: 3px;
+  color: #000;
+  outline: none;
+  width: 500px;
+  border: none;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.sec6 .content .input button {
+  font-size: 30px;
+  padding-left: 10px;
+  width: 250px;
+  background-color: #e50914;
+  outline: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  place-items: center;
+}
+
+.sec6 .content .input button i {
+  font-size: 40px;
+}
+
+.sec7 {
+  margin: 0;
+  height: 394px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec7 * {
+  color: #707070;
+}
+
+.sec7 .content {
+  margin: auto auto;
+}
+
+.sec7 .content .number {
+  font-size: 20px;
+}
+
+.sec7 .content a {
+  text-decoration: none;
+}
+
+.sec7 .content a:hover {
+  text-decoration: underline;
+}
+
+.sec7 .content ul {
+  margin: 30px 0;
+  max-width: 900px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.sec7 .content ul li {
+  font-size: 13px;
+  width: 25%;
+  margin-bottom: 16px;
+}
+
+.sec7 .content .btn1 {
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #505050;
+  margin: 0 30px 30px 0;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 3px;
+}
+
+.sec7 .content p {
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .sec {
+    display: none;
+  }
+  body::after {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    content: "Please open this on desktop";
+    font-size: 25px;
+  }
+} 

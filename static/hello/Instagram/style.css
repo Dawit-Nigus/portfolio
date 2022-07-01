@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .box .box1 {
+  height: auto;
+  width: 350px;
+  border: 1px solid #cccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .box .box1 img {
+  height: 50px;
+  margin: 30px auto 12px;
+}
+
+body .box .box1 .ins {
+  margin-top: 20px;
+  display: inherit;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+}
+
+body .box .box1 .ins input {
+  font-size: 13px;
+  height: 36px;
+  width: 260px;
+  margin-bottom: 5px;
+  padding: 0 7px;
+  border-radius: 3px;
+  border: 1px solid #cccc;
+}
+
+body .box .box1 .ins input::-webkit-input-placeholder {
+  color: #8d8d8d;
+  letter-spacing: -1px;
+  
+}
+
+body .box .box1 .ins input:-ms-input-placeholder {
+  letter-spacing: -1px;
+  color: #8d8d8d;
+}
+
+body .box .box1 .ins input::-ms-input-placeholder {
+  color: #8d8d8d;
+}
+
+body .box .box1 .ins input::placeholder {
+  color: #8d8d8d;
+}
+
+body .box .box1 .ins button {
+  color: #fff;
+  height: 30px;
+  width: 260px;
+  margin-top: 10px;
+  background-color: #0095f6;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body .box .box1 .belowins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .box .box1 .belowins .or,
+body .box .box1 .belowins .facebook,
+body .box .box1 .belowins .fpass {
+  display: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .box .box1 .belowins .or {
+  color: #575757;
+  margin: 20px 0;
+}
+
+body .box .box1 .belowins .or::before,
+body .box .box1 .belowins .or::after {
+  content: "";
+  height: 1px;
+  width: 100px;
+  background-color: #ccc;
+  margin: 0 15px;
+}
+
+body .box .box1 .belowins .facebook {
+  font-weight: bold;
+  color: #385185;
+  margin-bottom: 10px;
+}
+
+body .box .box1 .belowins .facebook .bx {
+  margin: 5px;
+  font-size: 23px;
+}
+
+body .box .box1 .belowins .fpass {
+  font-size: 13px;
+  color: #385185;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+body .box .box2 {
+  height: 60px;
+  width: 350px;
+  margin: 10px 0;
+  border: 1px solid #cccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .box .box2 a {
+  font-weight: bold;
+  color: #0095f6;
+  text-decoration: none;
+}
+
+body .box .box3 {
+  margin: 20px 0;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .box .box3 .links {
+  margin: 20px 0 0 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .box .box3 .links .link1 {
+  margin-right: 10px;
+}
+
+body .box .box3 .links .link1,
+body .box .box3 .links .link2 {
+  width: 130px;
+  height: 40px;
+  padding: 0 0 0 7px;
+  border-radius: 5px;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .box .box3 .links .link1 img,
+body .box .box3 .links .link2 img {
+  height: 25px;
+  margin-right: 5px;
+}
+
+body .box .box3 .links .link1 .text,
+body .box .box3 .links .link2 .text {
+  color: #fff;
+}
+
+body .box .box3 .links .link1 .text p,
+body .box .box3 .links .link2 .text p {
+  font-size: 9px;
+}
+
+body .box .box3 .links .link1 .text span,
+body .box .box3 .links .link2 .text span {
+  font-weight: bold;
+  width: 100%;
+  font-size: 18px;
+}
+
+body .box .box3 .links .link2 .text span {
+  font-size: 15px;
+}
+/*# sourceMappingURL=style.css.map */
